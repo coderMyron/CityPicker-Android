@@ -48,6 +48,7 @@
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:background="@drawable/shape_city_search_bg"
                 android:hint="请输入城市名称搜索"/>
             <Button
@@ -58,6 +59,7 @@
                 android:textColor="@color/black"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
+                android:visibility="gone"
                 android:background="@drawable/shape_city_item_bg"
                 android:text="搜索"/>
         </LinearLayout>

@@ -3,6 +3,8 @@ package com.lmy.citypicker;
 import android.app.Activity;
 import android.content.Context;
 import android.content.res.AssetManager;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -236,7 +238,7 @@ public class CityPickerHelper implements AMapLocationListener
             tvCurrentCity.setVisibility(View.VISIBLE);
             tvCurrentCity.setText(currentCity.city);
         }else {
-            tvCurrentCity.setVisibility(View.GONE);
+            tvCurrentCity.setVisibility(View.INVISIBLE);
         }
         tvCurrentCity.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -265,6 +267,20 @@ public class CityPickerHelper implements AMapLocationListener
         searchCitysAdapter = new SearchCitysAdapter(mContext,searchCitys);
         lvSearch.setAdapter(searchCitysAdapter);
         etCity = outerView.findViewById(R.id.et_city);
+        etCity.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                searchCity();
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+            }
+        });
         Button btnSearch = outerView.findViewById(R.id.btn_search);
         btnSearch.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -331,6 +347,37 @@ public class CityPickerHelper implements AMapLocationListener
             }
         });
 
+    }
+
+    private void searchCity(){
+        if (etCity.getText().toString().equals("")){
+            llCitys.setVisibility(View.VISIBLE);
+            lvSearch.setVisibility(View.GONE);
+        }else {
+            searchCitys.clear();
+            String city = etCity.getText().toString().replace("市","");
+            for (int i = 0; i < provinceList.size(); i++) {
+                ProvinceInfo provinceInfo = provinceList.get(i);
+                for (int j = 0; j < provinceInfo.hots.size(); j++) {
+                    if (i == 0){
+                        continue;
+                    }
+                    CityInfo cityInfo = provinceInfo.hots.get(j);
+                    if (cityInfo.city.contains(city)){
+                        searchCitys.add(cityInfo);
+                    }
+                }
+                for (int j = 0; j < provinceInfo.others.size(); j++) {
+                    CityInfo cityInfo = provinceInfo.others.get(j);
+                    if (cityInfo.city.contains(city)){
+                        searchCitys.add(cityInfo);
+                    }
+                }
+            }
+            searchCitysAdapter.setCitys(searchCitys);
+            llCitys.setVisibility(View.GONE);
+            lvSearch.setVisibility(View.VISIBLE);
+        }
     }
 
     private void chooseProvince(int position){
@@ -401,7 +448,7 @@ public class CityPickerHelper implements AMapLocationListener
                     tvCurrentCity.setVisibility(View.VISIBLE);
                     tvCurrentCity.setText(currentCity.city);
                 }else {
-                    tvCurrentCity.setVisibility(View.GONE);
+                    tvCurrentCity.setVisibility(View.INVISIBLE);
                 }
                 Log.d(TAG, "location " + aMapLocation.toString());
                 Log.d(TAG, "location " + city);

@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
                 CityPickerHelper.getInstance(MainActivity.this).showCitys(new CityPickerHelper.CityCallBack() {
                     @Override
                     public void onChooseCity(CityInfo cityInfo) {
-                        Log.d("city","province:" + cityInfo.province + ",city:" + cityInfo.city);
-                        tvCity.setText(cityInfo.province + cityInfo.city);
+                        Log.d("city","province:" + cityInfo.provinceFullName + ",city:" + cityInfo.cityFullName);
+                        tvCity.setText(cityInfo.provinceFullName + cityInfo.cityFullName);
                     }
                 });
             }

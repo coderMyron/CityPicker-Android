@@ -1,157 +1,157 @@
 [
   {
-  "province": "推荐",
-  "hots": ["江西-赣州", "湖南-衡阳", "湖南-邵阳", "重庆", "广西-玉林", "江西-吉安"],
-  "others": ["北京", "天津", "上海", "重庆"]
+    "province": {"simple":"推荐","full":"推荐"},
+    "hots": [{"simple":"赣州","full":"江西省-赣州市"}, {"simple":"衡阳","full":"湖南省-衡阳市"}, {"simple":"邵阳","full":"湖南省-邵阳市"}, {"simple":"重庆","full":"重庆市市辖区"}, {"simple":"玉林","full":"广西壮族自治区-玉林市"}, {"simple":"吉安","full":"江西省-吉安市"}],
+    "others": [{"simple":"北京","full":"北京市市辖区"}, {"simple":"天津","full":"天津市市辖区"}, {"simple":"上海","full":"上海市市辖区"}, {"simple":"重庆","full":"重庆市市辖区"}]
   },
   {
-    "province": "湖南",
-    "hots": ["衡阳", "邵阳", "永州", "常德", "郴州", "岳阳"],
-    "others": ["长沙", "株洲", "湘潭", "张家界", "益阳", "怀化", "娄底", "湘西"]
+    "province": {"simple":"湖南","full":"湖南省"},
+    "hots": [{"simple":"衡阳","full":"衡阳市"}, {"simple":"邵阳","full":"邵阳市"}, {"simple":"永州","full":"永州市"}, {"simple":"常德","full":"常德市"}, {"simple":"郴州","full":"郴州市"}, {"simple":"岳阳","full":"岳阳市"}],
+    "others": [{"simple":"长沙","full":"长沙市"}, {"simple":"株洲","full":"株洲市"}, {"simple":"湘潭","full":"湘潭市"}, {"simple":"张家界","full":"张家界市"}, {"simple":"益阳","full":"益阳市"}, {"simple":"怀化","full":"怀化市"}, {"simple":"娄底","full":"娄底市"}, {"simple":"湘西","full":"湘西市"}]
   },
   {
-    "province": "湖北",
-    "hots": ["黄冈", "荆州", "襄阳", "咸宁", "恩施", "孝感"],
-    "others": ["武汉", "黄石", "十堰", "宜昌", "鄂州", "荆门", "随州", "仙桃","潜江","天门","神农架"]
+    "province": {"simple":"湖北","full":"湖北省"},
+    "hots": [{"simple":"黄冈","full":"黄冈市"}, {"simple":"荆州","full":"荆州市"}, {"simple":"襄阳","full":"襄阳市"}, {"simple":"咸宁","full":"咸宁市"}, {"simple":"恩施","full":"恩施市"}, {"simple":"孝感","full":"孝感市"}],
+    "others": [{"simple":"武汉","full":"武汉市"}, {"simple":"黄石","full":"黄石市"}, {"simple":"十堰","full":"十堰市"}, {"simple":"宜昌","full":"宜昌市"}, {"simple":"鄂州","full":"鄂州市"}, {"simple":"荆门","full":"荆门市"}, {"simple":"随州","full":"随州市"}, {"simple":"仙桃","full":"仙桃市"},{"simple":"潜江","full":"潜江市"},{"simple":"天门","full":"天门市"},{"simple":"神农架","full":"神农架市"}]
   },
   {
-    "province": "江西",
-    "hots": ["赣州", "吉安", "宜春", "九江", "抚州", "上饶"],
-    "others": ["南昌", "景德镇", "萍乡", "新余", "鹰潭"]
+    "province": {"simple":"江西","full":"江西省"},
+    "hots": [{"simple":"赣州","full":"赣州市"}, {"simple":"吉安","full":"吉安市"}, {"simple":"宜春","full":"宜春市"}, {"simple":"九江","full":"九江市"}, {"simple":"抚州","full":"抚州市"}, {"simple":"上饶","full":"上饶市"}],
+    "others": [{"simple":"南昌","full":"南昌市"}, {"simple":"景德镇","full":"景德镇市"}, {"simple":"萍乡","full":"萍乡市"}, {"simple":"新余","full":"新余市"}, {"simple":"鹰潭","full":"鹰潭市"}]
   },
   {
-    "province": "广东",
-    "hots": ["茂名", "梅州", "东莞", "广州", "湛江", "深圳"],
-    "others": ["韶关", "珠海", "汕头", "佛山", "江门","肇庆","惠州","汕尾","河源","阳江","清远","中山","潮州","揭阳","云浮"]
+    "province": {"simple":"广东","full":"广东省"},
+    "hots": [{"simple":"茂名","full":"茂名市"}, {"simple":"梅州","full":"梅州市"}, {"simple":"东莞","full":"东莞市"}, {"simple":"广州","full":"广州市"}, {"simple":"湛江","full":"湛江市"}, {"simple":"深圳","full":"深圳市"}],
+    "others": [{"simple":"韶关","full":"韶关市"}, {"simple":"珠海","full":"珠海市"}, {"simple":"汕头","full":"汕头市"}, {"simple":"佛山","full":"佛山市"}, {"simple":"江门","full":"江门市"},{"simple":"肇庆","full":"肇庆市"},{"simple":"惠州","full":"惠州市"},{"simple":"汕尾","full":"汕尾市"},{"simple":"河源","full":"河源市"},{"simple":"阳江","full":"阳江市"},{"simple":"清远","full":"清远市"},{"simple":"中山","full":"中山市"},{"simple":"潮州","full":"潮州市"},{"simple":"揭阳","full":"揭阳市"},{"simple":"云浮","full":"云浮市"}]
   },
   {
-    "province": "福建",
-    "hots": ["泉州", "龙岩", "漳州", "莆田", "福州", "三明"],
-    "others": ["厦门", "南平", "宁德"]
+    "province": {"simple":"福建","full":"福建省"},
+    "hots": [{"simple":"泉州","full":"泉州市"}, {"simple":"龙岩","full":"龙岩市"}, {"simple":"漳州","full":"漳州市"}, {"simple":"莆田","full":"莆田市"}, {"simple":"福州","full":"福州市"}, {"simple":"三明","full":"三明市"}],
+    "others": [{"simple":"厦门","full":"厦门市"}, {"simple":"南平","full":"南平市"}, {"simple":"宁德","full":"宁德市"}]
   },
   {
-    "province": "广西",
-    "hots": ["玉林", "贵港", "梧州", "钦州", "南宁", "河池"],
-    "others": ["柳州", "桂林", "北海", "防城港", "百色", "贺州", "来宾", "崇左"]
+    "province": {"simple":"广西","full":"广西壮族自治区"},
+    "hots": [{"simple":"玉林","full":"玉林市"}, {"simple":"贵港","full":"贵港市"}, {"simple":"梧州","full":"梧州市"}, {"simple":"钦州","full":"钦州市"}, {"simple":"南宁","full":"南宁市"}, {"simple":"河池","full":"河池市"}],
+    "others": [{"simple":"柳州","full":"柳州市"}, {"simple":"桂林","full":"桂林市"}, {"simple":"北海","full":"北海市"}, {"simple":"防城港","full":"防城港市"}, {"simple":"百色","full":"百色市"}, {"simple":"贺州","full":"贺州市"}, {"simple":"来宾","full":"来宾市"}, {"simple":"崇左","full":"崇左市"}]
   },
   {
-    "province": "海南",
-    "hots": ["海口", "儋州", "三亚", "文昌", "琼海", "万宁"],
-    "others": ["三沙", "五指山", "东方", "定安", "屯昌", "澄迈", "临高", "白沙","昌江","乐东","陵水","保亭","琼中"]
+    "province": {"simple":"海南","full":"海南省"},
+    "hots": [{"simple":"海口","full":"海口市"}, {"simple":"儋州","full":"儋州市"}, {"simple":"三亚","full":"三亚市"}, {"simple":"文昌","full":"文昌市"}, {"simple":"琼海","full":"琼海市"}, {"simple":"万宁","full":"万宁市"}],
+    "others": [{"simple":"三沙","full":"三沙市"}, {"simple":"五指山","full":"五指山市"}, {"simple":"东方","full":"东方市"}, {"simple":"定安","full":"定安县"}, {"simple":"屯昌","full":"屯昌县"}, {"simple":"澄迈","full":"澄迈县"}, {"simple":"临高","full":"临高县"}, {"simple":"白沙","full":"白沙县"},{"simple":"昌江","full":"昌江县"},{"simple":"乐东","full":"乐东县"},{"simple":"陵水","full":"陵水县"},{"simple":"保亭","full":"保亭县"},{"simple":"琼中","full":"琼中县"}]
   },
   {
-    "province": "四川",
-    "hots": ["达州", "南充", "广安", "泸州", "宜宾", "遂宁"],
-    "others": ["成都", "自贡", "攀枝花", "德阳", "绵阳", "广元", "内江", "乐山","眉山","雅安","巴中","资阳","阿坝","甘孜","凉山"]
+    "province": {"simple":"四川","full":"四川省"},
+    "hots": [{"simple":"达州","full":"达州市"}, {"simple":"南充","full":"南充市"}, {"simple":"广安","full":"广安市"}, {"simple":"泸州","full":"泸州市"}, {"simple":"宜宾","full":"宜宾市"}, {"simple":"遂宁","full":"遂宁市"}],
+    "others": [{"simple":"成都","full":"成都市"}, {"simple":"自贡","full":"自贡市"}, {"simple":"攀枝花","full":"攀枝花市"}, {"simple":"德阳","full":"德阳市"}, {"simple":"绵阳","full":"绵阳市"}, {"simple":"广元","full":"广元市"}, {"simple":"内江","full":"内江市"}, {"simple":"乐山","full":"乐山市"},{"simple":"眉山","full":"眉山市"},{"simple":"雅安","full":"雅安市"},{"simple":"巴中","full":"巴中市"},{"simple":"资阳","full":"资阳市"},{"simple":"阿坝","full":"阿坝藏族羌族自治州"},{"simple":"甘孜","full":"甘孜藏族自治州"},{"simple":"凉山","full":"凉山彝族自治州"}]
   },
   {
-    "province": "贵州",
-    "hots": ["遵义", "铜仁", "黔东南", "黔南", "毕节", "黔西南"],
-    "others": ["贵阳", "六盘水", "安顺"]
+    "province": {"simple":"贵州","full":"贵州省"},
+    "hots": [{"simple":"遵义","full":"遵义市"}, {"simple":"铜仁","full":"铜仁市"}, {"simple":"黔东南","full":"黔东南苗族侗族自治州"}, {"simple":"黔南","full":"黔南布依族苗族自治州"}, {"simple":"毕节","full":"毕节市"}, {"simple":"黔西南","full":"黔西南布依族苗族自治州"}],
+    "others": [{"simple":"贵阳","full":"贵阳市"}, {"simple":"六盘水","full":"六盘水市"}, {"simple":"安顺","full":"安顺市"}]
   },
   {
-    "province": "云南",
-    "hots": ["文山", "昭通", "曲靖", "红河", "大理", "楚雄"],
-    "others": ["昆明", "玉溪", "保山", "丽江", "普洱", "临沧", "西双版纳", "德宏","怒江","迪庆"]
+    "province": {"simple":"云南","full":"云南省"},
+    "hots": [{"simple":"文山","full":"文山壮族苗族自治州"}, {"simple":"昭通","full":"昭通市"}, {"simple":"曲靖","full":"曲靖市"}, {"simple":"红河","full":"红河哈尼族彝族自治州"}, {"simple":"大理","full":"大理白族自治州"}, {"simple":"楚雄","full":"楚雄彝族自治州"}],
+    "others": [{"simple":"昆明","full":"昆明市"}, {"simple":"玉溪","full":"玉溪市"}, {"simple":"保山","full":"保山市"}, {"simple":"丽江","full":"丽江市"}, {"simple":"普洱","full":"普洱市"}, {"simple":"临沧","full":"临沧市"}, {"simple":"西双版纳","full":"西双版纳傣族自治州"}, {"simple":"德宏","full":"德宏傣族景颇族自治州"},{"simple":"怒江","full":"怒江傈僳族自治州"},{"simple":"迪庆","full":"迪庆藏族自治州"}]
   },
   {
-    "province": "安徽",
-    "hots": ["阜阳", "安庆", "亳州", "合肥", "六安", "宿州"],
-    "others": ["芜湖", "蚌埠", "淮南", "马鞍山", "淮北", "铜陵", "黄山", "滁州","池州","宣城"]
+    "province": {"simple":"安徽","full":"安徽省"},
+    "hots": [{"simple":"阜阳","full":"阜阳市"}, {"simple":"安庆","full":"安庆市"}, {"simple":"亳州","full":"亳州市"}, {"simple":"合肥","full":"合肥市"}, {"simple":"六安","full":"六安市"}, {"simple":"宿州","full":"宿州市"}],
+    "others": [{"simple":"芜湖","full":"芜湖市"}, {"simple":"蚌埠","full":"蚌埠市"}, {"simple":"淮南","full":"淮南市"}, {"simple":"马鞍山","full":"马鞍山市"}, {"simple":"淮北","full":"淮北市"}, {"simple":"铜陵","full":"铜陵市"}, {"simple":"黄山","full":"黄山市"}, {"simple":"滁州","full":"滁州市"},{"simple":"池州","full":"池州市"},{"simple":"宣城","full":"宣城市"}]
   },
   {
-    "province": "浙江",
-    "hots": ["温州", "金华", "台州", "丽水", "宁波", "衢州"],
-    "others": ["杭州", "嘉兴", "湖州", "绍兴", "舟山"]
+    "province": {"simple":"浙江","full":"浙江省"},
+    "hots": [{"simple":"温州","full":"温州市"}, {"simple":"金华","full":"金华市"}, {"simple":"台州","full":"台州市"}, {"simple":"丽水","full":"丽水市"}, {"simple":"宁波","full":"宁波市"}, {"simple":"衢州","full":"衢州市"}],
+    "others": [{"simple":"杭州","full":"杭州市"}, {"simple":"嘉兴","full":"嘉兴市"}, {"simple":"湖州","full":"湖州市"}, {"simple":"绍兴","full":"绍兴市"}, {"simple":"舟山","full":"舟山市"}]
   },
   {
-    "province": "江苏",
-    "hots": ["南通", "泰州", "徐州", "盐城", "扬州", "苏州"],
-    "others": ["南京", "无锡", "常州", "连云港", "淮安", "镇江", "宿迁"]
+    "province": {"simple":"江苏","full":"江苏省"},
+    "hots": [{"simple":"南通","full":"南通市"}, {"simple":"泰州","full":"泰州市"}, {"simple":"徐州","full":"徐州市"}, {"simple":"盐城","full":"盐城市"}, {"simple":"扬州","full":"扬州市"}, {"simple":"苏州","full":"苏州市"}],
+    "others": [{"simple":"南京","full":"南京市"}, {"simple":"无锡","full":"无锡市"}, {"simple":"常州","full":"常州市"}, {"simple":"连云港","full":"连云港市"}, {"simple":"淮安","full":"淮安市"}, {"simple":"镇江","full":"镇江市"}, {"simple":"宿迁","full":"宿迁市"}]
   },
   {
-    "province": "河北",
-    "hots": ["邯郸", "沧州", "石家庄", "邢台", "衡水", "保定"],
-    "others": ["唐山", "秦皇岛", "张家口", "承德", "廊坊"]
+    "province": {"simple":"河北","full":"河北省"},
+    "hots": [{"simple":"邯郸","full":"邯郸市"}, {"simple":"沧州","full":"沧州市"}, {"simple":"石家庄","full":"石家庄市"}, {"simple":"邢台","full":"邢台市"}, {"simple":"衡水","full":"衡水市"}, {"simple":"保定","full":"保定市"}],
+    "others": [{"simple":"唐山","full":"唐山市"}, {"simple":"秦皇岛","full":"秦皇岛市"}, {"simple":"张家口","full":"张家口市"}, {"simple":"承德","full":"承德市"}, {"simple":"廊坊","full":"廊坊市"}]
   },
   {
-    "province": "山西",
-    "hots": ["运城", "临汾", "晋中", "长治", "太原", "吕梁"],
-    "others": ["大同", "阳泉", "晋城", "朔州", "忻州"]
+    "province": {"simple":"山西","full":"山西省"},
+    "hots": [{"simple":"运城","full":"运城市"}, {"simple":"临汾","full":"临汾市"}, {"simple":"晋中","full":"晋中市"}, {"simple":"长治","full":"长治市"}, {"simple":"太原","full":"太原市"}, {"simple":"吕梁","full":"吕梁市"}],
+    "others": [{"simple":"大同","full":"大同市"}, {"simple":"阳泉","full":"阳泉市"}, {"simple":"晋城","full":"晋城市"}, {"simple":"朔州","full":"朔州市"}, {"simple":"忻州","full":"忻州市"}]
   },
   {
-    "province": "内蒙古",
-    "hots": ["赤峰", "呼和浩特", "通辽", "包头", "乌兰察布", "乌海"],
-    "others": ["鄂尔多斯", "呼伦贝尔", "巴彥淖尔", "兴安", "锡林郭勒", "阿拉善"]
+    "province": {"simple":"内蒙古","full":"内蒙古自治区"},
+    "hots": [{"simple":"赤峰","full":"赤峰市"}, {"simple":"呼和浩特","full":"呼和浩特市"}, {"simple":"通辽","full":"通辽市"}, {"simple":"包头","full":"包头市"}, {"simple":"乌兰察布","full":"乌兰察布市"}, {"simple":"乌海","full":"乌海市"}],
+    "others": [{"simple":"鄂尔多斯","full":"鄂尔多斯市"}, {"simple":"呼伦贝尔","full":"呼伦贝尔市"}, {"simple":"巴彥淖尔","full":"巴彥淖尔市"}, {"simple":"兴安","full":"兴安盟"}, {"simple":"锡林郭勒","full":"锡林郭勒盟"}, {"simple":"阿拉善","full":"阿拉善盟"}]
   },
   {
-    "province": "辽宁",
-    "hots": ["沈阳", "大连", "锦州", "葫芦岛", "鞍山", "朝阳"],
-    "others": ["抚顺", "本溪", "丹东", "营口", "阜新", "辽阳", "盘锦", "铁岭"]
+    "province": {"simple":"辽宁","full":"辽宁省"},
+    "hots": [{"simple":"沈阳","full":"沈阳市"}, {"simple":"大连","full":"大连市"}, {"simple":"锦州","full":"锦州市"}, {"simple":"葫芦岛","full":"葫芦岛市"}, {"simple":"鞍山","full":"鞍山市"}, {"simple":"朝阳","full":"朝阳市"}],
+    "others": [{"simple":"抚顺","full":"抚顺市"}, {"simple":"本溪","full":"本溪市"}, {"simple":"丹东","full":"丹东市"}, {"simple":"营口","full":"营口市"}, {"simple":"阜新","full":"阜新市"}, {"simple":"辽阳","full":"辽阳市"}, {"simple":"盘锦","full":"盘锦市"}, {"simple":"铁岭","full":"铁岭市"}]
   },
   {
-    "province": "吉林",
-    "hots": ["长春", "四平", "吉林", "通化", "松原", "辽源"],
-    "others": ["白山", "白城", "延边"]
+    "province": {"simple":"吉林","full":"吉林省"},
+    "hots": [{"simple":"长春","full":"长春市"}, {"simple":"四平","full":"四平市"}, {"simple":"吉林","full":"吉林市"}, {"simple":"通化","full":"通化市"}, {"simple":"松原","full":"松原市"}, {"simple":"辽源","full":"辽源市"}],
+    "others": [{"simple":"白山","full":"白山市"}, {"simple":"白城","full":"白城市"}, {"simple":"延边","full":"延边朝鲜族自治州"}]
   },
   {
-    "province": "黑龙江",
-    "hots": ["哈尔滨", "大庆", "绥化", "齐齐哈尔", "牡丹江", "鸡西"],
-    "others": ["鹤岗", "双鸭山", "伊春", "佳木斯", "七台河", "黑河", "大兴安岭"]
+    "province": {"simple":"黑龙江","full":"黑龙江省"},
+    "hots": [{"simple":"哈尔滨","full":"哈尔滨市"}, {"simple":"大庆","full":"大庆市"}, {"simple":"绥化","full":"绥化市"}, {"simple":"齐齐哈尔","full":"齐齐哈尔市"}, {"simple":"牡丹江","full":"牡丹江市"}, {"simple":"鸡西","full":"鸡西市"}],
+    "others": [{"simple":"鹤岗","full":"鹤岗市"}, {"simple":"双鸭山","full":"双鸭山市"}, {"simple":"伊春","full":"伊春市"}, {"simple":"佳木斯","full":"佳木斯市"}, {"simple":"七台河","full":"七台河市"}, {"simple":"黑河","full":"黑河市"}, {"simple":"大兴安岭","full":"大兴安岭市"}]
   },
   {
-    "province": "山东",
-    "hots": ["菏泽", "聊城", "临沂", "济宁", "潍坊", "枣庄"],
-    "others": ["济南", "青岛", "淄博", "东营", "烟台", "泰安", "威海", "日照","莱芜","德州","滨州"]
+    "province": {"simple":"山东","full":"山东省"},
+    "hots": [{"simple":"菏泽","full":"菏泽市"}, {"simple":"聊城","full":"聊城市"}, {"simple":"临沂","full":"临沂市"}, {"simple":"济宁","full":"济宁市"}, {"simple":"潍坊","full":"潍坊市"}, {"simple":"枣庄","full":"枣庄市"}],
+    "others": [{"simple":"济南","full":"济南市"}, {"simple":"青岛","full":"青岛市"}, {"simple":"淄博","full":"淄博市"}, {"simple":"东营","full":"东营市"}, {"simple":"烟台","full":"烟台市"}, {"simple":"泰安","full":"泰安市"}, {"simple":"威海","full":"威海市"}, {"simple":"日照","full":"日照市"},{"simple":"莱芜","full":"莱芜市"},{"simple":"德州","full":"德州市"},{"simple":"滨州","full":"滨州市"}]
   },
   {
-    "province": "河南",
-    "hots": ["南阳", "驻马店", "信阳", "周口", "商丘", "平顶山"],
-    "others": ["郑州", "开封", "洛阳", "安阳", "鹤壁", "新乡", "焦作", "濮阳","许昌","漯河","三门峡","济源"]
+    "province": {"simple":"河南","full":"河南省"},
+    "hots": [{"simple":"南阳","full":"南阳市"}, {"simple":"驻马店","full":"驻马店市"}, {"simple":"信阳","full":"信阳市"}, {"simple":"周口","full":"周口市"}, {"simple":"商丘","full":"商丘市"}, {"simple":"平顶山","full":"平顶山市"}],
+    "others": [{"simple":"郑州","full":"郑州市"}, {"simple":"开封","full":"开封市"}, {"simple":"洛阳","full":"洛阳市"}, {"simple":"安阳","full":"安阳市"}, {"simple":"鹤壁","full":"鹤壁市"}, {"simple":"新乡","full":"新乡市"}, {"simple":"焦作","full":"焦作市"}, {"simple":"濮阳","full":"濮阳市"},{"simple":"许昌","full":"许昌市"},{"simple":"漯河","full":"漯河市"},{"simple":"三门峡","full":"三门峡市"},{"simple":"济源","full":"济源市"}]
   },
   {
-    "province": "西藏",
-    "hots": ["拉萨", "林芝", "日喀则", "昌都", "山南", "那曲地区"],
-    "others": ["阿里地区"]
+    "province": {"simple":"西藏","full":"西藏自治区"},
+    "hots": [{"simple":"拉萨","full":"拉萨市"}, {"simple":"林芝","full":"林芝市"}, {"simple":"日喀则","full":"日喀则市"}, {"simple":"昌都","full":"昌都市"}, {"simple":"山南","full":"山南市"}, {"simple":"那曲地区","full":"那曲地区"}],
+    "others": [{"simple":"阿里地区","full":"阿里地区市"}]
   },
   {
-    "province": "陕西",
-    "hots": ["汉中", "安康", "渭南", "咸阳", "西安", "宝鸡"],
-    "others": ["铜川", "延安", "榆林", "商洛"]
+    "province": {"simple":"陕西","full":"陕西省"},
+    "hots": [{"simple":"汉中","full":"汉中市"}, {"simple":"安康","full":"安康市"}, {"simple":"渭南","full":"渭南市"}, {"simple":"咸阳","full":"咸阳市"}, {"simple":"西安","full":"西安市"}, {"simple":"宝鸡","full":"宝鸡市"}],
+    "others": [{"simple":"铜川","full":"铜川市"}, {"simple":"延安","full":"延安市"}, {"simple":"榆林","full":"榆林市"}, {"simple":"商洛","full":"商洛市"}]
   },
   {
-    "province": "甘肃",
-    "hots": ["庆阳", "陇南", "天水", "平凉", "定西", "白银"],
-    "others": ["兰州", "嘉峪关", "金昌", "武威", "张掖", "酒泉", "临夏", "甘南"]
+    "province": {"simple":"甘肃","full":"甘肃省"},
+    "hots": [{"simple":"庆阳","full":"庆阳市"}, {"simple":"陇南","full":"陇南市"}, {"simple":"天水","full":"天水市"}, {"simple":"平凉","full":"平凉市"}, {"simple":"定西","full":"定西市"}, {"simple":"白银","full":"白银市"}],
+    "others": [{"simple":"兰州","full":"兰州市"}, {"simple":"嘉峪关","full":"嘉峪关市"}, {"simple":"金昌","full":"金昌市"}, {"simple":"武威","full":"武威市"}, {"simple":"张掖","full":"张掖市"}, {"simple":"酒泉","full":"酒泉市"}, {"simple":"临夏","full":"临夏回族自治州"}, {"simple":"甘南","full":"甘南藏族自治州"}]
   },
   {
-    "province": "青海",
-    "hots": ["西宁", "海东", "海南", "海西", "海北", "黄南"],
-    "others": ["果洛", "玉树"]
+    "province": {"simple":"青海","full":"青海省"},
+    "hots": [{"simple":"西宁","full":"西宁市"}, {"simple":"海东","full":"海东市"}, {"simple":"海南","full":"海南藏族自治州"}, {"simple":"海西","full":"海西蒙古族蒙古族自治州"}, {"simple":"海北","full":"海北藏族自治州"}, {"simple":"黄南","full":"黄南藏族自治州"}],
+    "others": [{"simple":"果洛","full":"果洛藏族自治州"}, {"simple":"玉树","full":"玉树藏族自治州"}]
   },
   {
-    "province": "宁夏",
-    "hots": ["银川", "中卫", "固原", "吴忠", "石嘴山"],
+    "province": {"simple":"宁夏","full":"宁夏回族自治区"},
+    "hots": [{"simple":"银川","full":"银川市"}, {"simple":"中卫","full":"中卫市"}, {"simple":"固原","full":"固原市"}, {"simple":"吴忠","full":"吴忠市"}, {"simple":"石嘴山","full":"石嘴山市"}],
     "others": []
   },
   {
-    "province": "新疆",
-    "hots": ["乌鲁木齐", "巴音郭楞", "阿克苏", "昌吉", "哈密", "伊犁"],
-    "others": ["克拉玛依", "吐鲁番", "博尔塔拉", "克孜勒苏", "喀什", "和田", "塔城", "阿勒泰","石河子","阿拉尔","图木舒克","五家渠"]
+    "province": {"simple":"新疆","full":"新疆维吾尔自治区"},
+    "hots": [{"simple":"乌鲁木齐","full":"乌鲁木齐市"}, {"simple":"巴音郭楞","full":"巴音郭楞蒙古自治州"}, {"simple":"阿克苏","full":"阿克苏地区"}, {"simple":"昌吉","full":"昌吉回族自治州"}, {"simple":"哈密","full":"哈密市"}, {"simple":"伊犁","full":"伊犁哈萨克自治州"}],
+    "others": [{"simple":"克拉玛依","full":"克拉玛依市"}, {"simple":"吐鲁番","full":"吐鲁番市"}, {"simple":"博尔塔拉","full":"博尔塔拉蒙古自治州"}, {"simple":"克孜勒苏","full":"克孜勒苏柯尔克孜自治州"}, {"simple":"喀什","full":"喀什地区"}, {"simple":"和田","full":"和田地区"}, {"simple":"塔城","full":"塔城地区"}, {"simple":"阿勒泰","full":"阿勒泰地区"},{"simple":"石河子","full":"石河子市"},{"simple":"阿拉尔","full":"阿拉尔市"},{"simple":"图木舒克","full":"图木舒克市"},{"simple":"五家渠","full":"五家渠市"}]
   },
   {
-    "province": "香港",
-    "hots": ["香港"],
+    "province": {"simple":"香港","full":"香港"},
+    "hots": [{"simple":"香港","full":"香港"}],
     "others": []
   },
   {
-    "province": "澳门",
-    "hots": ["澳门"],
+    "province": {"simple":"澳门","full":"澳门"},
+    "hots": [{"simple":"澳门","full":"澳门"}],
     "others": []
   },
   {
-    "province": "台湾",
-    "hots": ["台湾"],
+    "province": {"simple":"台湾","full":"台湾"},
+    "hots": [{"simple":"台湾","full":"台湾"}],
     "others": []
   }
 ]

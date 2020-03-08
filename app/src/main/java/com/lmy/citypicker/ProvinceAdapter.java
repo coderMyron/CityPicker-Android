@@ -33,7 +33,7 @@ public class ProvinceAdapter extends RecyclerView.Adapter<ProvinceAdapter.ViewHo
     public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
         Log.d("recycle", "--- " + position);
         ProvinceInfo province = mFruitList.get(position);
-        holder.fruitName.setText(province.province);
+        holder.fruitName.setText(province.name);
         if (lastPosition == position) {
             holder.fruitName.setBackgroundColor(Color.parseColor("#cccccc"));
         }else {

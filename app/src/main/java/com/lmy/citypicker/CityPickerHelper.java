@@ -107,33 +107,43 @@ public class CityPickerHelper implements AMapLocationListener
                         JSONObject object = array.getJSONObject(i);
                         if (object != null) {
                             ProvinceInfo province = new ProvinceInfo();
-                            province.province = object.optString(ProvinceInfo.PROVINCE);
+                            JSONObject provineceObject = object.optJSONObject(ProvinceInfo.PROVINCE);
+                            if (provineceObject != null) {
+                                province.name = provineceObject.optString(ProvinceInfo.SIMPLE);
+                                province.fullName = provineceObject.optString(ProvinceInfo.FULL);
+                            }
                             JSONArray hotsArray = object.optJSONArray(ProvinceInfo.HOTS);
                             if (hotsArray != null) {
                                 List<CityInfo> hotsList = new ArrayList<>();
                                 for (int j = 0; j < hotsArray.length(); j++) {
-                                    String hot = hotsArray.optString(j);
-                                    if (hot != null) {
-                                        CityInfo cityInfo = new CityInfo();
-                                        if (i == 0) {
-                                            String[] name = hot.split("-");
-                                            if (name.length == 2) {
-                                                cityInfo.city = name[1];
-                                                cityInfo.province = name[0];
+                                    JSONObject cityObject = hotsArray.optJSONObject(j);
+                                    if (cityObject != null) {
+                                        String hot = cityObject.optString(ProvinceInfo.SIMPLE);
+                                        String hotFull = cityObject.optString(ProvinceInfo.FULL);
+                                        if (hotFull != null) {
+                                            CityInfo cityInfo = new CityInfo();
+                                            if (i == 0) {
+                                                String[] name = hotFull.split("-");
+                                                if (name.length == 2) {
+                                                    cityInfo.cityFullName = name[1];
+                                                    cityInfo.provinceFullName = name[0];
+                                                }else {
+                                                    cityInfo.cityFullName = hotFull;
+                                                    cityInfo.provinceFullName = "";
+                                                }
+                                                cityInfo.city = hot;
                                             }else {
                                                 cityInfo.city = hot;
-                                                cityInfo.province = "";
-                                            }
-                                        }else {
-                                            cityInfo.city = hot;
-                                            if (!province.province.equals("香港") &&
-                                                    !province.province.equals("澳门")
-                                                    && !province.province.equals("台湾")){
-                                                cityInfo.province = province.province;
-                                            }
+                                                cityInfo.cityFullName = hotFull;
+                                                if (!province.name.equals("香港") &&
+                                                        !province.name.equals("澳门")
+                                                        && !province.name.equals("台湾")){
+                                                    cityInfo.provinceFullName = province.fullName;
+                                                }
 
+                                            }
+                                            hotsList.add(cityInfo);
                                         }
-                                        hotsList.add(cityInfo);
                                     }
                                 }
                                 province.hots = hotsList;
@@ -141,19 +151,22 @@ public class CityPickerHelper implements AMapLocationListener
 
                             JSONArray othersArray = object.optJSONArray(ProvinceInfo.OTHERS);
                             if (othersArray != null) {
-                                List<CityInfo> hotsList = new ArrayList<>();
+                                List<CityInfo> othersList = new ArrayList<>();
                                 for (int j = 0; j < othersArray.length(); j++) {
-                                    String other = othersArray.optString(j);
-                                    if (other != null) {
+                                    JSONObject otherObject = othersArray.optJSONObject(j);
+                                    if (otherObject != null) {
+                                        String other = otherObject.optString(ProvinceInfo.SIMPLE);
+                                        String fullName = otherObject.optString(ProvinceInfo.FULL);
                                         CityInfo cityInfo = new CityInfo();
                                         if (i != 0){
-                                            cityInfo.province = province.province;
+                                            cityInfo.provinceFullName = province.fullName;
                                         }
                                         cityInfo.city = other;
-                                        hotsList.add(cityInfo);
+                                        cityInfo.cityFullName = fullName;
+                                        othersList.add(cityInfo);
                                     }
                                 }
-                                province.others = hotsList;
+                                province.others = othersList;
                             }
                             provinceList.add(province);
 
@@ -376,11 +389,15 @@ public class CityPickerHelper implements AMapLocationListener
                 //aMapLocation.getCountry();//国家信息
                 String province = aMapLocation.getProvince();//省信息
                 String city = aMapLocation.getCity();//城市信息
-                currentCity = new CityInfo();
-                currentCity.province = province;
-                currentCity.city = city;
-                mlocationClient.stopLocation();
-                if (city != null) {
+
+                if (city != null && !city.equals("")) {
+                    mlocationClient.stopLocation();
+                    currentCity = new CityInfo();
+                    currentCity.provinceFullName = province;
+                    currentCity.cityFullName = city;
+                    String simple  = city.replace("市","");
+                    simple  = simple.replace("自治州","");
+                    currentCity.city = simple;
                     tvCurrentCity.setVisibility(View.VISIBLE);
                     tvCurrentCity.setText(currentCity.city);
                 }else {
